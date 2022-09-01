@@ -17,7 +17,7 @@ describe('counter reducer', () => {
   });
 
   it('should handle increment', () => {
-    const actual = counterReducer(initialState, increment());
+    const actual = counterReducer(initialState, increment()); //{value: 4,status: 'idle',};
     expect(actual.value).toEqual(4);
   });
 
